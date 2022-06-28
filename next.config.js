@@ -3,7 +3,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
 
-const baseUrl = 'https://854dev.github.io';
+const baseUrl = '';
 
 module.exports = withBundleAnalyzer({
   poweredByHeader: false,
