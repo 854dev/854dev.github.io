@@ -18,6 +18,7 @@ const Index = (props: IBlogGalleryProps) => (
       />
     }
   >
+    <p className='color-red'>test</p>
     <BlogGallery posts={props.posts} pagination={props.pagination} />
   </Main>
 );
