@@ -1,40 +1,30 @@
 {
   // Configuration for JavaScript files
-  "extends": [
-    "airbnb-base",
-    "next/core-web-vitals",
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["airbnb-base", "next/core-web-vitals", "plugin:prettier/recommended"],
   "rules": {
-    "prettier/prettier": [
-      // prettier 에러 주석처리
-      // "error",
-      // {
-      //   "singleQuote": false,
-      // }
-    ]
+    // "prettier/prettier": [
+    //   "error",
+    //   {
+    //     "singleQuote": false
+    //   }
+    // ]
   },
   "overrides": [
     // Configuration for TypeScript files
     {
       "files": ["**/*.ts", "**/*.tsx"],
       "plugins": ["@typescript-eslint", "unused-imports"],
-      "extends": [
-        "airbnb-typescript",
-        "next/core-web-vitals",
-        "plugin:prettier/recommended"
-      ],
+      "extends": ["airbnb-typescript", "next/core-web-vitals", "plugin:prettier/recommended"],
       "parserOptions": {
         "project": "./tsconfig.json"
       },
       "rules": {
-        "prettier/prettier": [
-          // prettier 에러 주석처리
-          // "error",
-          // {
-          //   "singleQuote": true
-          // }
-        ],
+        // "prettier/prettier": [
+        //   "error",
+        //   {
+        //     "singleQuote": true
+        //   }
+        // ],
         "react/destructuring-assignment": "off", // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
         "jsx-a11y/anchor-is-valid": "off", // Next.js use his own internal link system
         "react/require-default-props": "off", // Allow non-defined react props as undefined
@@ -64,10 +54,7 @@
         "class-methods-use-this": "off", // _document.tsx use render method without `this` keyword
         "@typescript-eslint/no-unused-vars": "off",
         "unused-imports/no-unused-imports": "error",
-        "unused-imports/no-unused-vars": [
-          "error",
-          { "argsIgnorePattern": "^_" }
-        ]
+        "unused-imports/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
       }
     }
   ]
