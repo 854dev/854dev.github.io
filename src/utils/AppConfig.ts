@@ -6,4 +6,4 @@ export const AppConfig = {
   locale: 'en',
   author: 'Anonymous',
   pagination_size: 5,
-}
+};

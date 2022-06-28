@@ -1,14 +1,14 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode } from 'react';
 
-import Link from 'next/link'
+import Link from 'next/link';
 
-import { Navbar } from '../navigation/Navbar'
-import { AppConfig } from '../utils/AppConfig'
+import { Navbar } from '../navigation/Navbar';
+import { AppConfig } from '../utils/AppConfig';
 
 type IMainProps = {
-  meta: ReactNode
-  children: ReactNode
-}
+  meta: ReactNode;
+  children: ReactNode;
+};
 
 const Main = (props: IMainProps) => (
   <div className='antialiased w-full text-gray-700 px-3 md:px-0'>
@@ -56,6 +56,6 @@ const Main = (props: IMainProps) => (
       </div>
     </div>
   </div>
-)
+);
 
-export { Main }
+export { Main };

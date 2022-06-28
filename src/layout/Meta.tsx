@@ -1,24 +1,24 @@
-import React from 'react'
+import React from 'react';
 
-import Head from 'next/head'
-import { useRouter } from 'next/router'
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
-import { AppConfig } from '../utils/AppConfig'
-import { addTrailingSlash } from '../utils/Url'
+import { AppConfig } from '../utils/AppConfig';
+import { addTrailingSlash } from '../utils/Url';
 
 type IMetaProps = {
-  title: string
-  description: string
-  canonical?: string
+  title: string;
+  description: string;
+  canonical?: string;
   post?: {
-    image: string
-    date: string
-    modified_date: string
-  }
-}
+    image: string;
+    date: string;
+    modified_date: string;
+  };
+};
 
 const Meta = (props: IMetaProps) => {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <>
@@ -118,7 +118,7 @@ const Meta = (props: IMetaProps) => {
         )}
       </Head>
     </>
-  )
-}
+  );
+};
 
-export { Meta }
+export { Meta };
