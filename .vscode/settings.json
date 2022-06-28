@@ -4,32 +4,30 @@
   "powermode.combo.counterEnabled": "show",
   "powermode.combo.timeout": 2,
   "powermode.combo.counterSize": 4,
-  "powermode.enabled":true,
+  "powermode.enabled": true,
   "powermode.shake.enabled": false,
   "powermode.explosions.enabled": true,
   "powermode.explosions.size": 10,
   "powermode.explosions.offset": 0.5,
-  "powermode.presets": "fireworks",   
+  "powermode.presets": "fireworks",
 
   "jest.autoRun": {
     "watch": false,
     "onSave": "test-file"
   },
   "search.exclude": {
-    "package-lock.json": true
+    "package-lock.json": true,
+    "yarn.lock": true
   },
 
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnSave": false,
-  "editor.codeActionsOnSave": [
-    "source.addMissingImports",
-    "source.fixAll.eslint"
-  ],
+  "editor.codeActionsOnSave": ["source.addMissingImports", "source.fixAll.eslint"],
   // Multiple language settings for json and jsonc files
   "[json][jsonc]": {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
