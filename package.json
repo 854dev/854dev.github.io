@@ -2,6 +2,10 @@
   "name": "854-blog",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/854dev/854dev.github.io"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
