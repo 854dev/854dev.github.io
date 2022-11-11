@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function NavBar() {
   return (
-    <aside className="border bg-slate-500">
+    <aside className="navbar">
       <ul>
         <li>
           <Link href="/">Home</Link>

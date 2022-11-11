@@ -1,0 +1,3 @@
+.navbar {
+  @apply fixed w-96 bg-slate-200;
+}
