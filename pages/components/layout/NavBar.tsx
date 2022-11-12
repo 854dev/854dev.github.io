@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function NavBar() {
   return (
-    <aside className="navbar">
+    <aside className="pl-4 pr-2 text-center text-slate-400 bg-slate-800 md:w-64 md:text-left">
       <ul>
         <li>
           <Link href="/">Home</Link>
