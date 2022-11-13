@@ -1,4 +1,5 @@
-import PageLayout from "pages/components/layout/PageLayout";
+import PageLayout from "components/layout/PageLayout";
+import PostList from "components/post/PostList";
 import React from "react";
 /**
  *
@@ -9,6 +10,7 @@ function Post() {
   return (
     <PageLayout>
       <h1>studio854 블로그 페이지</h1>
+      <PostList items={}></PostList>
     </PageLayout>
   );
 }
