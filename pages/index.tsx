@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import PageLayout from "./components/layout/PageLayout";
+import PageLayout from "components/layout/PageLayout";
 
 export default function Home() {
   return (
