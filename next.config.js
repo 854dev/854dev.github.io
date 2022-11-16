@@ -1,19 +1,20 @@
 /** @type {import('next').NextConfig} */
-const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin") 
-
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  webpack:(config, options) => {
+  webpack: (config, options) => {
     if (config.resolve.plugins) {
       config.resolve.plugins.push(new TsconfigPathsPlugin());
-    }
-    else {
+    } else {
       config.resolve.plugins = [new TsconfigPathsPlugin()];
     }
     return config;
-  }
-}
+  },
+  env: {
+    BACKEND_API_URL: "http://localhost:3018/",
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
