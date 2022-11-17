@@ -3,19 +3,26 @@ import Link from "next/link";
 
 function NavBar() {
   return (
-    <aside className="pl-4 pr-2 text-center text-slate-400 bg-slate-800 md:w-64 md:text-left">
-      <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/about">about</Link>
-        </li>
-        <li>
-          <Link href="/post">post</Link>
-        </li>
-      </ul>
-    </aside>
+    <header className="flex items-center justify-between py-10">
+      <div>
+        <Link aria-label="TailwindBlog" href="/">
+          <div className="flex items-center justify-between">
+            <div className="mr-3">854BLOG</div>
+          </div>
+        </Link>
+      </div>
+      <div className="flex items-center text-base leading-5">
+        <a className="p-1 font-medium text-gray-900 sm:p-4" href="/post">
+          Post
+        </a>
+        <a className="p-1 font-medium text-gray-900 sm:p-4" href="/about">
+          About
+        </a>
+        <a className="p-1 font-medium text-gray-900 sm:p-4" href="/study">
+          Study
+        </a>
+      </div>
+    </header>
   );
 }
 
