@@ -6,13 +6,11 @@ import NavBar from "./NavBar";
 
 function PageLayout(props: PropsWithChildren) {
   return (
-    <div>
-      <ContentWrap>
-        <NavBar />
-        <Container>{props.children}</Container>
-      </ContentWrap>
+    <Container>
+      <NavBar />
+      {props.children}
       <Footer />
-    </div>
+    </Container>
   );
 }
 
